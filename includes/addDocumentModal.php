@@ -75,7 +75,7 @@ placeholder="Enter Document Name"></td>
 				}
 				$run = mysqli_query($link, "INSERT INTO files (uid,title,filetype,filesize,filetmpname,ctid,credit,url,postdate) VALUES ('$_SESSION[userId]','$filename','$doctype','$docsize','$doc','$cat','$credit','$path$docname',current_date()) ");
 				if ($run) {
-					move_uploaded_file($doctmp, $path.$docname);
+					move_uploaded_file($doctmp, $path.$doc);
 					echo "File has been uploaded";
 				}
 				else{

@@ -1,32 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-  <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
-  
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-
-  <meta charset="utf-8">
-  <meta name="author" content="Mohsin Gaur">
-  <meta name="description" content="Students can find old question papers of the university polytechnic of Jamia Millia Islamia New Delhi on Examjourney.com ">
-  <meta name="keywords" content="Jamia Millia Islamia, University Polytechnic, SAS Mohsin Gaur, Examjourney Mohsin Gaur, University Polytechnic Last Year Question Papers, Diploma in Computer Engineering Jamia Millia Islamia, Ist Semester Question Papers, Examjourney, Exam Journey">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<?php
+	session_start();
+	include 'includes/config.php';
+	include 'includes/heads.php';
+	?>
 
 <style type="text/css">
 	::-webkit-scrollbar{ width: 5px;}
 	::-webkit-scrollbar-thumb{ background-color: #aaa; }
 </style>
-<?php
-session_start();
-include 'includes/config.php';
-include 'includes/credits.php';
-include 'includes/loginModal.php';
-
-?>
 
 <script type="text/javascript">
 	
@@ -56,6 +40,8 @@ include 'includes/loginModal.php';
 
 <?php
 include 'includes/nav.php';
+include 'includes/credits.php';
+include 'includes/loginModal.php';
 
 if (isset($_GET['fn'])) {
 
@@ -150,7 +136,7 @@ $size = ceil($row['filesize']/1024);
 				<div class='p-right flt-rt'>
 				<?php if (isset($_SESSION['userId'])) {
 				?>
-					<i class='fa fa-certificate' title='Credits' style='color:blue;'></i> <?=$row['credit']?> Points | &nbsp; <a href="documents/<?=$row['filetmpname'];?>" class='pan-button' onclick="docDownload(<?=$_SESSION['uid']?>,<?=$row['fileid']?>,<?=$row['category']?>,<?=$row['credit']?>)" download> Download <i class='fa fa-download' ></i> </a> &nbsp;
+					<i class='fa fa-certificate' title='Credits' style='color:blue;'></i> <?=$row['credit']?> Points | &nbsp; <a href="documents/<?=$row['filetmpname'];?>" class='pan-button' onclick="docDownload(<?=$_SESSION['uid']?>,<?=$row['fileid']?>,<?=$row['catid']?>,<?=$row['credit']?>)" download> Download <i class='fa fa-download' ></i> </a> &nbsp;
 					<span id='downloadalert'></span>
 				<?php } 
 				else{
