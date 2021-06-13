@@ -8,13 +8,13 @@ echo @$_GET['ch'];
 <p>You can change your account settings here</p>
 
 <div class="col-md-8">
-<div class="panel panel-primary">
-	<div class="panel-heading">
-		<b>Personal Info</b>
-	</div>
-	<div class="panel-body">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<b>Personal Info</b>
+		</div>
+		<div class="panel-body">
 
-		<div class="profile">
+			<div class="profile">
 				<div class="label-box">
 					<label>Name</label>
 					<p>
@@ -57,10 +57,10 @@ echo @$_GET['ch'];
 						<?=$user['uoccupation']?> <a href='#' data-toggle='modal' data-target='#editOc'><i class='fa fa-pencil fltrt'></i></a>
 					</p>
 				</div>
+			</div>
+
 		</div>
-		
 	</div>
-</div>
 </div>
 
 <div class="col-md-4">
@@ -83,5 +83,5 @@ echo @$_GET['ch'];
 					<img id="src" src="">
 				</div>
 			</div>
+		</div>
 	</div>
-</div>
