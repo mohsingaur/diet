@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	//############################ Validation form ###############################
+	function validateForm(form){
+	if(form.course.value==""){
+		alert('Please enter course...');
+		form.course.focus();
+		return(false);
+	}
+	else if(form.branch.value==""){
+		alert('Please enter branch...');
+		form.course.focus();
+		return(false);
+	}
+	else if(form.sub.value==""){
+		alert('Please enter subject...');
+		form.sub.focus();
+		return(false);
+	}
+	else if(form.sem.value==""){
+		alert('Please enter Semester...');
+		form.sem.focus();
+		return(false);
+	}
+	else if(form.year.value==""){
+		alert('Please enter year...');
+		form.year.focus();
+		return(false);
+	}
+	else if (form.uname.value == "") {
+		alert('Please enter user id...');
+		form.uname.focus();
+		return(false);
+	}
+	else if(form.pas.value==""){
+		alert('Please enter password...');
+		form.pass.focus();
+		return(false);
+	}
+	else return (true);
+}
+function cp(){
+	var cp = document.getElementById('cp');
+	cp.style.height = window.innerHeight - 60+"px";
+	if (cp.style.display == "block") {
+		cp.style.display = "none";
+	}
+	else{
+	cp.style.display = "block";
+	}
+}
+</script>
+<style type="text/css">
+
+	#cpbtn{position: fixed; top: 15px; right: 15px; height: 22px; width: 24px; border:1px transparent solid; padding: 5px 5px; border-radius: 2px; cursor: pointer; transition: border 0.5s linear;}
+	#cpbtn > div{background: #333; width: 20px; height: 4px; border-radius: 4px; margin: 2px auto; transition: background 0.5s linear;}
+	#cpbtn:hover{border: 1px solid blue;}
+	#cpbtn:hover  div{background: blue;}
+	#cp{background:#ddd; width: 260px; position: absolute; right: 0; top:60px; display: none; padding: 10px;}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="cpbtn" onclick="cp()">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+<div id="cp"><h1>Control Panel</h1></div>
+
+<form class="form" method="post" action="" name="adForm" onsubmit="return validateForm(adForm)">
+	<p>
+	Course
+	<input type="text" name="course"></p>
+
+	<p>
+	Branch
+	<input type="text" id="branch" name="branch" ></p>
+
+	<p>
+	Semester
+	<input type="text" id="sem" name="sem" ></p>
+	
+	<p>Subject
+	<input type="text" id="sub" name="sub" ></p>
+	
+	<p>Year
+	<input type="text" id="year" name="year"></p>
+
+	<input type="submit" name="search" value="Search">
+	
+</form>
+
+</body>
+</html>

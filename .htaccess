@@ -1,0 +1,18 @@
+#Rewrite engine mode
+#RewriteEngine on
+#RewriteRule ^home index.php [NC,L]
+#RewriteRule ^docs docs.php [NC,L]
+#RewriteRule ^contactus contact.php [NC,L]
+
+#RewriteRule ^([a-zA-Z0-9]+) document.php?q=$1 [NC,L]
+
+#RewriteRule ^signup signup.php [NC,L]
+#RewriteRule ^ejCommunity ej.php [NC,L]
+#RewriteRule ^q/([0-9]+)/([0-9]+) q.php?cid=$1&fid=$2 [NC,L]
+#RewriteRule ^q q.php [NC,L]
+#RewriteRule ^c c.php [NC,L]
+#ErrorDocument 404 /error404.html
+#ErrorDocument 500 /error500.html
+#http://localhost/work/examjourney/q?cid=1&fid=4
+#RewriteRule ^q/([0-9]+)$/([0-9]+)$ q.php?cid=$1&fid=$2 [NC,L]
+#RewriteRule ^q/([0-9]+)/([0-9]+) q.php?cid=$1&fid=$2

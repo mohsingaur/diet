@@ -1,0 +1,345 @@
+/* ############################# Bootstrap modification Styling starts here ######################################*/
+.modal-backdrop {
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+}
+.panel-body .img{  
+	border: 1px solid #eee;
+	border-radius: 50%;
+	width: 200px;
+	margin: 10px auto;
+	overflow: hidden; 
+	text-align: center;
+}
+.panel-body .img img{
+	width: 100%;
+}
+.panel-footer i{
+	cursor: pointer;
+	text-align: center;
+	padding: 0 15px;
+	color: #556 !important;
+}
+.panel-footer a:hover{ text-decoration: none; }
+/* ############################# Bootstrap modification Styling ends here ######################################*/
+
+
+/* ############################# Default Styling starts here ######################################*/
+::-webkit-scrollbar{
+	width: 3px;
+}
+::-webkit-scrollbar-thumb{
+	background: #aaa;
+}
+
+a{ text-decoration: none; }
+
+*{ 
+	margin:0; 
+	padding: 0; 
+	box-sizing: border-box; 
+}
+
+.fltrt{
+	float: right;
+}
+
+.fltlt{
+	float: left;
+}
+.txt-center{ text-align: center; margin:1px auto; }
+
+
+body {
+	font-family: 'Arial';
+	font-size: 14px;
+}
+.pills{ 
+	border-radius: 50%; 
+	background: #ddd; 
+	border: 1px solid #ccc; 
+	padding: 5px 7px; 
+	cursor: pointer;
+	color: blue;
+}
+.pills:hover{ box-shadow: 2px 2px 2px #ccc; }
+/* ############################# Defaukt Styling ends here ######################################*/
+
+/* ############################# Header Styling starts here ######################################*/
+.header{
+	position: relative; 
+	top: 0;
+	width: 100%; 
+	height: 40px;
+}
+
+.header .logo{
+	padding: 9px;
+	width: 220px;
+	font-style: 'Tangerine',serif;
+	font-size: 20px;
+	background: #3498DB;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	float: left;
+}
+
+.header .navigation{
+	background: #fff;
+	width: 100%;
+}
+
+.header .navigation ul li{
+	display: inline-block;
+	padding: 10px;
+}
+
+.header .navigation ul li a{
+	text-decoration: none;
+	color: #7a7a7a;
+}
+/* ############################# Header styling ends ######################################*/
+
+/* ############################# Main page Styling start ######################################*/
+.main{
+	margin-top: 40px;
+	padding: 0;
+	
+}
+
+/* ############################# Sidebar or Navigation Bar Styling start ######################################*/
+.side-bar{
+	position: fixed;
+	top: 40px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #414143;
+	background-size: auto 100%;
+	width: 221px;
+	color: #fff;
+	
+}
+.side-bar ul li{
+	padding: 10px;
+	border-bottom: 2px solid #2A2A2A;
+	list-style: none;
+}
+.side-bar ul li hr{
+	margin: 2px auto !important;
+}
+
+.side-bar ul li a{
+	text-decoration: none;
+	padding-left: 13px;
+	color: #fff !important;
+	font-size: 14px;
+	font-style: 
+}
+
+.side-bar ul li:first-child{
+	padding: 5px 0 0 0;
+	height: 150px !important;
+}
+.side-bar ul li img{
+	height: 80px; 
+	width: 80px; 
+	border-radius: 100%; 
+	border: 2px double #fff; 
+	float: left;
+}
+.side-bar ul li .txt{
+	font-size: 12px;
+	padding: 5px;
+	height: auto; 
+	width: 100px; 
+	float: left; 
+}
+
+hr{
+	margin: 7px auto;
+}
+/* ############################# sidebar or navigation bar Styling ends ######################################*/
+
+/* ############################# Content area Styling start ######################################*/
+.content-area{
+	position: fixed;
+	top:40px;
+	left: 220px;
+	bottom: 0;
+	right: 0;
+	background: #EEF0F4;
+	overflow: scroll;
+}
+.content-area p{
+	padding-left: 10px; 
+}
+
+.content-area h2, h3, h4{
+	padding: 20px 0 20px 10px;
+	color: #737374;
+}
+/* ############################# Content Styling ends ######################################*/
+
+/* ############################# Articles Styling start here ######################################*/
+.art-box{
+	width: auto; 
+	height: auto;
+	margin-top: 10px; 
+	border: 1px solid #aaa; 
+	border-radius: 5px; 
+	overflow:hidden;
+}
+.art-content{
+	padding: 10px 10px 10px 0; 
+	height: 300px;
+	text-align: justify;
+	overflow: hidden;
+}
+.art-content ul,ol{
+	margin-left: 15px;
+}
+.art-content:hover{
+	overflow-y: scroll;
+}
+.art-content img {
+	float: left;
+	margin:5px 8px 5px 0;
+	border: 5px double #aaa;
+	border-radius: 3px;
+}
+.art-header{
+	padding: 10px; 
+	border-bottom: 1px solid #aaa; 
+	background: #fff;
+}
+.art-footer{
+	clear: both;
+	padding: 5px; 
+	border-top: 1px solid #aaa; 
+	text-align: center;
+}
+.art-footer a{
+	margin:0 20px;
+}
+
+/* ############################# Articles Styling ends ######################################*/
+
+
+/* ############################# New Updates Styling start ######################################*/
+
+.updates{
+	background: #D2D9E3;
+	margin: 10px auto;
+	padding: 20px 0;
+	width: 100%;
+	float: left;
+}
+.docs{
+	position: relative;
+	height: 50px; 
+	width: 150px;
+	padding: 5px 0 0 5px;
+	margin: 10px;
+	color: #fff;
+	float: left;
+	overflow: hidden;
+}
+.docs a{
+	color: #fff;
+}
+.docs i {
+	position: absolute;
+	right: 0;
+	bottom: -5px;	
+	opacity: 0.5;
+}
+.docs:first-child{
+	background-color: #A992E2;
+}
+.docs:nth-child(2){
+	background-color: #56B9E0;
+}
+.docs:nth-child(3){
+	background-color: #EC6F5B;
+}
+.docs:nth-child(4){
+	background-color: #F7C660;
+}
+
+.title-bar, .recent{
+	clear: both;
+	margin: 10px auto;
+	width: 100%;
+	border-top: 1px solid #DADADA;
+	border-bottom: 1px solid #DADADA;
+	background: #fff;
+	padding: 5px 10px;
+}
+
+.recent{
+	margin-top: -10px;
+	padding: 0;
+}
+
+.recent table, .profile table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.recent table tr td{
+	padding: 10px;
+}
+.recent table tr td:first-child{
+	width: 120px;
+}
+.recent table tr:nth-child(even){
+	background: #eee;
+}
+.recent object{
+	overflow: hidden;
+}
+/* ############################# New Update Styling ends here ######################################*/
+
+
+/* ################################################ Profile Page Styling Starts here #######################################################  */
+
+.profile{
+	padding: 10px;
+	color: #7d7d7d;
+}
+.profile table tr td{
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff; 
+	padding: 5px 0 5px 0;
+}
+.profile table tr td:first-child{
+	width: 150px;
+	font-weight: bold;
+}
+
+.label-box{ border-bottom: 2px solid #ccc; margin-bottom: 10px; }
+.label-box p{ padding: 0; margin: 0; }
+
+/* ################################################ Profile Page Styling ends here #######################################################  */
+
+
+
+
+/* ################################################ Custom Modal styling Starts #######################################################  */
+
+.cover{ display: none; background: rgba(0,0,0,0.8); position: fixed; top: 0; right: 0; left: 0; bottom: 0; margin: auto; width: 100%; height: 100%;  z-index: 15; overflow: scroll; }
+.cover .popup-content{ margin:100px auto; width: 50%; background: #fff; padding: 20px; border-radius: 5px;}
+.cover .popup-content .title{ margin: 0 0 10px 0 ; padding-bottom: 4px; font-size: 22px; font-weight: bold; color: #aaa; border-bottom: 2px solid #555;}
+/*.cover .popup-content { margin: 20px auto; border-radius: none; max-width: 100%; height: auto; }*/
+.cover .end{ position: absolute; top: 20px; right: 20px; font-size: 30px; cursor: pointer; font-weight: bold; color: #fff; }
+.cover form input,select,textarea,[type='file']{ width: 100%; margin: 10px 0px; padding: 2px 0 2px 5px; border-radius: 5px; outline: none; font-size: 12px; }
+.cover form [type='submit']{ border: none; width: auto; border-radius: 5px; padding: 6px 20px; margin: 10px 20px; color: #fff; background: #777; font-size: 16px; font-weight: bold; }
+
+/* ################################################ Custom Modal styling ends here #######################################################  */
