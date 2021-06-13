@@ -24,6 +24,9 @@ include 'includes/commentModal.php';
 ?>
 
 <div id="banner">
+  <div class="banner-txt">
+    DOCUMENT HUB
+  </div>
   <form class="search-input" method="post">
     <div class="form-group">
       <div class="input-group">
